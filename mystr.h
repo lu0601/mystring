@@ -9,7 +9,7 @@ class String
 {
 public:
     friend std::ostream &operator << (std::ostream &os, const String &output);
-    friend std::istream &operator >> (std::istream &is, const String &input);
+    friend std::istream &operator >> (std::istream &is, String &input);
     String(const char *input=" ");//有一個const char* 參數的constructor
     String(const String &input);//copy constructor
     ~String()
